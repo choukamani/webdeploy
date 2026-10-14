@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Custom terminal styles for log viewer */
+@layer components {
+  .terminal {
+    background-color: #0d1117;
+    border-radius: 0.5rem;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+      "Courier New", monospace;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    overflow-y: auto;
+    padding: 1rem;
+    color: #39ff14;
+  }
+
+  .terminal-line {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .terminal-line-info {
+    color: #39ff14;
+  }
+
+  .terminal-line-warn {
+    color: #facc15;
+  }
+
+  .terminal-line-error {
+    color: #ef4444;
+  }
+
+  .terminal-timestamp {
+    color: #6b7280;
+    margin-right: 0.75rem;
+    user-select: none;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-track {
+    background: #161b22;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 4px;
+  }
+
+  .terminal-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+  }
+}
